@@ -81,3 +81,5 @@ def unregister_from_activity(activity_name: str, email: str):
         raise HTTPException(status_code=404, detail="Student not signed up")
     activity["participants"].remove(email)
     return {"message": f"Removed {email} from {activity_name}"}
+
+# Exercise: duplicate-signup guard added with reviewer guidance
